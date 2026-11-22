@@ -1,8 +1,8 @@
-Orbital Mechanics Simulator
+# Orbital Mechanics Simulator
 
 A Python-based orbital mechanics simulator that models planetary motion using Newtonian gravity and numerical integration.
 
-Project Overview
+# Project Overview
 
 This project simulates the orbital motion of a celestial body around a stationary central mass using the Velocity Verlet integration method.
 
@@ -10,13 +10,13 @@ It calculates position, velocity, gravitational acceleration, kinetic energy, po
 
 The project combines classical mechanics, computational physics, and Python programming.
 
-Simulation Preview
+# Simulation Preview
 
 "Orbital Mechanics Simulation" (results/orbit.svg)
 
 Figure 1. Simulated orbital trajectory of Earth around the Sun.
 
-Features
+# Features
 
 - Newtonian gravitational acceleration
 - Two-dimensional orbital simulation
@@ -27,7 +27,7 @@ Features
 - SVG orbital trajectory visualization
 - Unit testing
 
-Physics Concepts
+# Physics Concepts
 
 - Newton's Law of Universal Gravitation
 - Newton's Second Law of Motion
@@ -37,7 +37,7 @@ Physics Concepts
 - Conservation of Mechanical Energy
 - Numerical Integration
 
-Technologies
+# Technologies
 
 - Python 3.10+
 - math
@@ -48,7 +48,7 @@ Technologies
 
 No external Python packages are required.
 
-Project Structure
+# Project Structure
 
 Orbital-Mechanics-Simulator/
 │
@@ -73,7 +73,7 @@ Orbital-Mechanics-Simulator/
 ├── LICENSE
 └── .gitignore
 
-Installation
+# Installation
 
 Clone the repository:
 
@@ -85,19 +85,19 @@ cd Orbital-Mechanics-Simulator
 
 No additional package installation is required.
 
-Usage
+# Usage
 
 Run the simulator:
 
 python main.py
 
-Run Tests
+# Run Tests
 
 Execute the unit tests:
 
 python -m unittest discover -s tests -t .
 
-Output
+# Output
 
 The simulator generates:
 
@@ -106,7 +106,7 @@ The simulator generates:
 
 Both files are saved in the "results" directory.
 
-Simulation Assumptions
+# Simulation Assumptions
 
 - The Sun is treated as a stationary central body.
 - The simulated planet moves in two dimensions.
@@ -115,7 +115,7 @@ Simulation Assumptions
 - Relativistic effects are not included.
 - SI units are used throughout the simulation.
 
-Future Improvements
+# Future Improvements
 
 - Multi-body gravitational simulation (N-Body)
 - Interactive orbital visualization
@@ -123,6 +123,6 @@ Future Improvements
 - Orbital period estimation
 - Improved energy conservation analysis
 
-License
+# License
 
 This project is licensed under the MIT License.
