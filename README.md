@@ -1,14 +1,22 @@
-# Orbital-Mechanics-Simulator
+Orbital Mechanics Simulator
 
-A Python-based orbital mechanics simulator that models the motion of a celestial body under Newtonian gravitational forces.
+A Python-based orbital mechanics simulator that models planetary motion using Newtonian gravity and numerical integration.
 
-## Overview
+Project Overview
 
-This project simulates the orbital motion of Earth around the Sun using the Velocity Verlet numerical integration method.
+This project simulates the orbital motion of a celestial body around a stationary central mass using the Velocity Verlet integration method.
 
 It calculates position, velocity, gravitational acceleration, kinetic energy, potential energy, and total mechanical energy over time.
 
-## Features
+The project combines classical mechanics, computational physics, and Python programming.
+
+Simulation Preview
+
+"Orbital Mechanics Simulation" (results/orbit.svg)
+
+Figure 1. Simulated orbital trajectory of Earth around the Sun.
+
+Features
 
 - Newtonian gravitational acceleration
 - Two-dimensional orbital simulation
@@ -19,16 +27,17 @@ It calculates position, velocity, gravitational acceleration, kinetic energy, po
 - SVG orbital trajectory visualization
 - Unit testing
 
-## Physics Concepts
+Physics Concepts
 
 - Newton's Law of Universal Gravitation
 - Newton's Second Law of Motion
 - Orbital Mechanics
-- Kinetic and Gravitational Potential Energy
+- Kinetic Energy
+- Gravitational Potential Energy
 - Conservation of Mechanical Energy
 - Numerical Integration
 
-## Technologies
+Technologies
 
 - Python 3.10+
 - math
@@ -39,55 +48,81 @@ It calculates position, velocity, gravitational acceleration, kinetic energy, po
 
 No external Python packages are required.
 
+Project Structure
 
-## Installation
+Orbital-Mechanics-Simulator/
+│
+├── main.py
+│
+├── src/
+│   ├── init.py
+│   ├── physics.py
+│   ├── simulator.py
+│   ├── analysis.py
+│   ├── exporter.py
+│   └── visualization.py
+│
+├── tests/
+│   ├── init.py
+│   └── test_physics.py
+│
+├── results/
+│   └── orbit.svg
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+
+Installation
 
 Clone the repository:
 
-bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Ftmzahra-Hassani/Orbital-Mechanics-Simulator.git
 
 Navigate to the project directory:
 
-bash
 cd Orbital-Mechanics-Simulator
 
-No additional package installation is needed.
+No additional package installation is required.
 
-## Usage
+Usage
 
 Run the simulator:
 
-bash
 python main.py
 
-## Run Tests
+Run Tests
 
-bash
-python -m unittest discover -s tests
-`
+Execute the unit tests:
 
-## Output
+python -m unittest discover -s tests -t .
+
+Output
 
 The simulator generates:
 
-- `orbital_data.csv` — Numerical simulation results.
-- `orbit.svg` — Orbital trajectory visualization.
+- "orbital_data.csv" — Numerical simulation data.
+- "orbit.svg" — Orbital trajectory visualization.
 
-Both files are saved in the `results` directory.
+Both files are saved in the "results" directory.
 
-## Simulation Assumptions
+Simulation Assumptions
 
 - The Sun is treated as a stationary central body.
 - The simulated planet moves in two dimensions.
 - Newtonian gravity is assumed.
-- Relativistic effects and interactions with other planets are ignored.
+- Gravitational interactions with other planets are ignored.
+- Relativistic effects are not included.
 - SI units are used throughout the simulation.
 
-## Future Improvements
+Future Improvements
 
-- Multi-body gravitational simulation
+- Multi-body gravitational simulation (N-Body)
 - Interactive orbital visualization
 - Comparison of numerical integration methods
 - Orbital period estimation
-- Energy conservation error analysis
+- Improved energy conservation analysis
+
+License
+
+This project is licensed under the MIT License.
