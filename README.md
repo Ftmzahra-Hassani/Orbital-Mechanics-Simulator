@@ -115,6 +115,33 @@ Both files are saved in the "results" directory.
 - Relativistic effects are not included.
 - SI units are used throughout the simulation.
 
+## Energy Conservation Analysis
+
+Energy conservation is an important indicator
+of numerical accuracy in orbital mechanics.
+
+The total mechanical energy of an orbiting
+system consists of kinetic and gravitational
+potential energy.
+
+For a system of two bodies:
+
+- Kinetic Energy:
+  E_k = 1/2 * m * v^2
+
+- Gravitational Potential Energy:
+  E_p = -G * m1 * m2 / r
+
+- Total Mechanical Energy:
+  E_total = E_k + E_p
+
+In an ideal isolated system, total mechanical
+energy remains constant over time.
+
+Monitoring energy variations helps evaluate
+the accuracy and stability of numerical
+integration methods.
+
 # Future Improvements
 
 - Multi-body gravitational simulation (N-Body)
