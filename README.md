@@ -48,6 +48,43 @@ Figure 1. Simulated orbital trajectory of Earth around the Sun.
 
 No external Python packages are required.
 
+# Simulation Configuration and Workflow
+
+The orbital mechanics simulator models the motion of Earth under the gravitational influence of the Sun.
+
+Initial Conditions
+
+The simulation uses the following initial parameters:
+
+- Central Body: Sun
+- Orbiting Body: Earth
+- Initial Position: 1 AU from the Sun along the x-axis
+- Initial Velocity: 98% of the theoretical circular orbital speed
+- Time Step: 3600 seconds (1 hour)
+- Simulation Duration: 1 year
+
+The initial orbital velocity is calculated using the "circular_orbit_speed()" function, with a scaling factor of 0.98.
+
+Simulation Process
+
+The simulation follows these main steps:
+
+1. Define the initial position and velocity of Earth.
+2. Create an Earth object using its physical properties.
+3. Initialize the orbital simulator with the Sun's mass and the selected time step.
+4. Run the simulation for one year.
+5. Analyze the simulation results.
+6. Export the numerical data and generate an orbital trajectory plot.
+
+Generated Outputs
+
+The simulator automatically generates the following files in the "results" directory:
+
+- "orbital_data.csv" – Contains the exported simulation data.
+- "orbit.svg" – Contains the visualization of the orbital trajectory.
+
+This workflow provides a structured way to simulate planetary motion, analyze the resulting data, and visualize orbital behavior.
+
 # Project Structure
 
 Orbital-Mechanics-Simulator/
