@@ -77,7 +77,9 @@ Orbital-Mechanics-Simulator/
 
 Clone the repository:
 
+```bash
 git clone https://github.com/Ftmzahra-Hassani/Orbital-Mechanics-Simulator.git
+
 
 Navigate to the project directory:
 
@@ -87,15 +89,23 @@ No additional package installation is required.
 
 # Usage
 
+```markdown
+## Usage
+
 Run the simulator:
 
+```bash
 python main.py
 
 # Run Tests
 
-Execute the unit tests:
+```markdown
+## Run Tests
 
-python -m unittest discover -s tests -t .
+Run the test suite using:
+
+```bash
+python -m unittest discover -s tests
 
 # Output
 
